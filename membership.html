@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help-Grace Membership Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5DEB3; /* Light brown background color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .section-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .consent-group {
+            margin-top: 20px;
+        }
+        .btn-submit {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .btn-submit:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="logo">
+        <img src="file:///A:/ONLINE%20PLATFORM%20FOR%20SERVICES%20SELL/LOGO.jpg" alt="Help-Grace Logo"> <!-- Path to your logo image -->
+        <h1>Help-Grace Membership Application Form</h1>
+    </div>
+
+    <form id="membershipForm">
+        <div class="section">
+            <div class="section-title">Personal Information</div>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+            <input type="radio" id="preferNotToSay" name="gender" value="Prefer not to say">
+            <label for="preferNotToSay">Prefer not to say</label>
+
+            <label for="nationality">Nationality:</label>
+            <select id="nationality" name="nationality" required>
+                <option value="">Select your country</option>
+                <!-- List of countries -->
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Angola">Angola</option>
+                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Belize">Belize</option>
+                <option value="Benin">Benin</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                <option value="Botswana">Botswana</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Brunei">Brunei</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cabo Verde">Cabo Verde</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Canada">Canada</option>
+                <option value="Central African Republic">Central African Republic</option>
+                <option value="Chad">Chad</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Comoros">Comoros</option>
+                <option value="Congo, Democratic Republic of the">Congo, Democratic Republic of the</option>
+                <option value="Congo, Republic of the">Congo, Republic of the</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="Dominica">Dominica</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Egypt">Egypt</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                <option value="Eritrea">Eritrea</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Eswatini">Eswatini</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Gambia">Gambia</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Germany">Germany</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Greece">Greece</option>
+                <option value="Grenada">Grenada</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Guinea">Guinea</option>
+                <option value="Guinea-Bissau">Guinea-Bissau</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Haiti">Haiti</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iran">Iran</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japan">Japan</option>
+                <option value="Jordan
+
+            <label for="primaryLanguage">Primary Language:</label>
+            <input type="text" id="primaryLanguage" name="primaryLanguage" required>
+
+            <label for="secondaryLanguages">Secondary Language(s):</label>
+            <input type="text" id="secondaryLanguages" name="secondaryLanguages">
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Emergency Contact</div>
+            <label for="emergencyFullName">Full Name:</label>
+            <input type="text" id="emergencyFullName" name="emergencyFullName" required>
+
+            <label for="relationship">Relationship:</label>
+            <input type="text" id="relationship" name="relationship" required>
+
+            <label for="emergencyPhoneNumber">Phone Number:</label>
+            <input type="tel" id="emergencyPhoneNumber" name="emergencyPhoneNumber" required>
+
+            <label for="emergencyEmail">Email Address:</label>
+            <input type="email" id="emergencyEmail" name="emergencyEmail" required>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Services Interest</div>
+            <label>Which services are you interested in? (Select all that apply)</label>
+            <input type="checkbox" id="service1" name="services" value="Sponsorship Forms Assistance">
+            <label for="service1">Sponsorship Forms Assistance</label><br>
+            <input type="checkbox" id="service2" name="services" value="Employment Insurance (EI) Application">
+            <label for="service2">Employment Insurance (EI) Application</label><br>
+            <input type="checkbox" id="service3" name="services" value="Canada Child Benefit (CCB) Application">
+            <label for="service3">Canada Child Benefit (CCB) Application</label><br>
+            <input type="checkbox" id="service4" name="services" value="Resume Writing">
+            <label for="service4">Resume Writing</label><br>
+            <input type="checkbox" id="service5" name="services" value="Passport Application">
+            <label for="service5">Passport Application</label><br>
+            <input type="checkbox" id="service6" name="services" value="Travel Document Application">
+            <label for="service6">Travel Document Application</label><br>
+            <input type="checkbox" id="service7" name="services" value="Work Permit Application">
+            <label for="service7">Work Permit Application</label><br>
+            <input type="checkbox" id="service8" name="services" value="Study Permit Application">
+            <label for="service8">Study Permit Application</label><br>
+            <input type="checkbox" id="service9" name="services" value="Visitor Visa Application">
+            <label for="service9">Visitor Visa Application</label><br>
+            <input type="checkbox" id="service10" name="services" value="Permanent Residency Application">
+            <label for="service10">Permanent Residency Application</label><br>
+            <input type="checkbox" id="service11" name="services" value="Citizenship Application">
+            <label for="service11">Citizenship Application</label><br>
+            <input type="checkbox" id="service12" name="services" value="Temporary Resident Permit Application">
+            <label for="service12">Temporary Resident Permit Application</label><br>
+            <input type="checkbox" id="service13" name="services" value="Family Class Application">
+            <label for="service13">Family Class Application</label><br>
+            <input type="checkbox" id="service14" name="services" value="Humanitarian and Compassionate (H&C) Application">
+            <label for="service14">Humanitarian and Compassionate (H&C) Application</label><br>
+            <input type="checkbox" id="service15" name="services" value="PR Card Application">
+            <label for="service15">PR Card Application</label><br>
+            <input type="checkbox" id="service16" name="services" value="PR Card Renewal">
+            <label for="service16">PR Card Renewal</label><br>
+            <input type="checkbox" id="service17" name="services" value="Healthcare Forms Assistance">
+            <label for="service17">Healthcare Forms Assistance</label><br>
+            <input type="checkbox" id="service18" name="services" value="Social Services Forms Assistance">
+            <label for="service18">Social Services Forms Assistance</label><br>
+            <input type="checkbox" id="service19" name="services" value="Refugee Protection and Asylum Forms">
+            <label for="service19">Refugee Protection and Asylum Forms</label><br>
+            <input type="checkbox" id="service20" name="services" value="Educational Forms Assistance">
+            <label for="service20">Educational Forms Assistance</label><br>
+            <input type="checkbox" id="service21" name="
